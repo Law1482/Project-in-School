@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+<link rel="stylesheet" href="UI.css">
+<body>
+	<table>
+		<tr>
+			<td><button onclick="button1()">Food1</button></td>
+			<td><button onclick="button2()">Food2</button></td>
+			<td><button onclick="button3()">Food3</button></td>
+			<td><button onclick="button4()">Food4</button></td>
+		</tr>
+		<tr>
+			<td><button onclick="button5()">Food5</button></td>
+			<td><button onclick="button6()">Food6</button></td>
+			<td><button onclick="button7()">Food7</button></td>
+			<td><button onclick="button8()">Food8</button></td>						
+		</tr>
+	</table>
+	<input type="text" id="Foodname" placeholder="Enter Food Name: "><br>
+	<input type="number" id="Foodquantity" placeholder="Enter How many"><br>
+	<input type="number" id="Useramount" placeholder="Enter useramount"><br>
+	<button onclick="addtocart()">add</button><br>
+	<button onclick="resetcart()">Reset</button>
+	<button onclick="calculate()">Calculate</button>
+	<p id="output"></p>
+	<button onclick="buy()">Buy</button>
+	<p id="output1"></p>
+	<input disabled="" class="invisible" id="empty">
+	<script src="JavaScript.js"></script>
+	
+</body>
+</html>
