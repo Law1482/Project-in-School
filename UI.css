@@ -1,0 +1,85 @@
+
+
+body {
+	background-image: url("fantasy.jpg");
+			background-size: cover;
+}
+.right {
+		border-radius: 10px;
+			position: fixed;
+			top: 0px;
+			right: 0px;
+			background-color: white;
+			width: 15%;
+			height: 10%;
+			transition: height 2s ease;
+}
+.button {
+			position: absolute;
+		width: 100%;
+			height: 50px;
+			background-color: red;
+}
+.button1 {
+	height: 20px;
+	width: 50px;
+}
+.invisible {
+			opacity: 0;
+}
+table {
+			margin: 30px;
+	align-items: center;
+			
+}
+button {
+	height: 100px;
+	width: 100px;
+	border-radius: 10px;
+}
+.chatbox {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 450px;
+	z-index: 0;
+}
+.casher {
+	align-content: center;
+	position: absolute;
+	width: 50%;
+	height: 500px;
+	z-index: 1;
+
+}
+.navigation {
+	position: absolute;
+	top: 0px;
+	height: 100px;
+	width: 60%;
+	background-color: black;
+	z-index: 100;
+}
+nav {	
+	margin-left: 200px;
+	margin-right: 200px;
+	border: 1px solid black;
+	background-color: white;
+			border-radius: 10px;
+}
+.searchicon {
+	height: 20px;
+	width: 20px;
+}
+.page {
+	position: relative;
+	border: 1px solid black;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 20px;
+	height: 1350px;
+	width: auto;
+	background-color: white;
+z-index: 10;
+			border-radius: 10px;
+}
