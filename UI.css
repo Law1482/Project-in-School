@@ -1,31 +1,9 @@
 
 body {
-			background-color: white;
-			color: black;
+	background-color: orange;
+	color: black;
 }
-.right {
-		border-radius: 10px;
-			position: fixed;
-			top: 0px;
-			right: 0px;
-			background-color: white;
-			width: 15%;
-			height: 10%;
-			transition: height 2s ease;
-}
-.button {
-			position: absolute;
-			width: 100%;
-			height: 50px;
-			background-color: red;
-}
-.button1 {
-	height: 30px;
-	width: 80px;
-}
-.invisible {
-			opacity: 0;
-}
+
 table {
 	left: 50%;
 }
@@ -33,14 +11,124 @@ button {
 	height: 100px;
 	width: 100px;
 	border-radius: 10px;
+	border: none;
 }
 nav {
-height: 50px;
-position: absolute;
+	margin: 10px;
+	width: auto;
+	height: 50px;
+	border: 1px solid black;
+}
+
+button.setting {
+    float: right;
+	position: relative;
+	height: 50px;
+	width: auto;
+}
+div.settingshow {
+	display: none;
+    right: 220px;
+    top: 114px;
+	position: absolute;
+	height: 100px;
+	width: 50px;
+	border: 2px solid black;
+	background-color: black;
+	z-index: 10;
+}
+div.items {
+	height: 100px;
+	width: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	position: relative;
+	justify-content: center;
 
 }
-.features {
+button.addtocart {
+	height: 20px;
+	width: auto;
+	position: relative;
+	float: right;
+	border: 1px solid;
+	border-radius: 5px;
+}
+div.pop {
+	display: none;
+	height: 300px;
+	width: 200px;
+	position: fixed;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	top: 200px;
+	left: 45%;
+	z-index: 101;
+
+}
+div.pop1 {
+	display: none;
+	height: 300px;
+	width: 200px;
+	position: fixed;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: white;
+	top: 200px;
+	left: 75%;
+	z-index: 100;
+
+}
+.menu {
 	display: flex;
+	margin: 50px;
+	border: 1px solid black;
+	justify-content: center;
+	align-content: center;
+	
+}
+.mainpage {
+	justify-content: center;
+	margin-top: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
+	width: auto;
+	height: 1000px;
+	border: 2px solid black;
+	background-color: white;
+}
+.amount {
+	position: absolute;
+	height: auto;
+	width: auto;
+
+
+}
+.right {
+	border-radius: 10px;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background-color: white;
+	width: 15%;
+	height: 10%;
+	transition: height 2s ease;
+}
+.button {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: red;
+}
+.button1 {
+	height: 30px;
+	width: 80px;
+	z-index: 11;
+}
+.features {
+	display: none;
 	width: 300px;
 	height: 300px;
 	position: fixed;
@@ -65,17 +153,7 @@ position: absolute;
 	top: 250px;
 	z-index: 1;
 }
-.mainpage {
-	margin-left: 200px;
-	margin-right: 200px;
-	width: auto;
-	border: 1px solid black;
-	height: 1000px;
-}
-h3 {
-	position: absolute;
-	left: 100px;
-}
+
 .receipt {
 	display: none;
 	position: fixed;

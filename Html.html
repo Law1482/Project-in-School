@@ -2,45 +2,60 @@
 <html>
 <head>
 </head>
+<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="UI.css">
 <body>
-
-		<div class="cart"><h3>cart</h3><br><p id="output1"></div>
-			<div class="mainpage">
-	<table align="center">
-		<tr>
-			<td><button onclick="button(1)">Food1</button></td>
-			<td><button onclick="button(2)">Food2</button></td>
-			<td><button onclick="button(3)">Food3</button></td>
-			<td><button onclick="button(4)">Food4</button></td>
-		</tr>
-		<tr>
-			<td><button onclick="button(5)">Food5</button></td>
-			<td><button onclick="button(6)">Food6</button></td>
-			<td><button onclick="button(7)">Food7</button></td>
-			<td><button onclick="button(8)">Food8</button></td>						
-		</tr>
-		
-	</table><br>
-		
-		<div class="chatbox1" id="chatbox"><p id="output"></p></p></div>
-	<img src="cashier.jpg" class="casher">
-	<button onclick="showreceipt()" id="buttonreceipt1" class="h">receipt</button>
-</div>
-	<div class="features" id="features"><div class="aligns">
-	<input type="text" id="Foodname" placeholder="Enter Food Name: "><br>
-	<input type="number" id="Foodquantity" placeholder="Enter How many"><br>
-	<input type="number" id="Useramount" placeholder="Enter useramount"><br>
-	<button onclick="addtocart()" class="button1">add</button><br>
-	<button onclick="resetcart()" class="button1">Reset</button>
-	<button onclick="calculate(0)" class="button1">Calculate</button>
-
-	<button onclick="buy()" class="button1">Buy</button>
-	
-	<input disabled="" class="invisible" id="empty"></div>
+	<div class="mainpage">
+		<nav><button class="store button1">Store</button><div class="settingshow" id="setting"><button onclick="viewitems()" class="button1">View Item</button></div><button class="setting" onclick="showsetting()">Setting</button></nav>
+		<div class="pop" id="POP"><input type="number" id="Foodquantity" placeholder="Enter How many" class="amount"><br></div>
+	<div class="menu_tab">
+		<div class="items">
+			<ul>
+			<button onclick="ADDTOCART()">Food1</button><button class="addtocart">Add To Cart</button>
+		<button onclick="button(2)">Food2</button><button class="addtocart">Add To Cart</button>
+		<button onclick="button(3)">Food3</button><button class="addtocart">Add To Cart</button>
+		<button onclick="button(4)">Food4</button><button class="addtocart">Add To Cart</button>
+		<button onclick="button(5)">Food5</button><button class="addtocart">Add To Cart</button>
+		<button onclick="button(6)">Food6</button><button class="addtocart">Add To Cart</button>
+		<button onclick="button(7)">Food7</button><button class="addtocart">Add To Cart</button>
+		</ul>
 	</div>
-	<div class="receipt" id="receipt"><p id="receipthere"></p></div>
-	<button onclick="viewitems()">View Item</button>
+	</div>	
+	<div class="menu">
+		<div class="items"><button onclick="button(8)">Food8</button><button class="addtocart">Add To Cart</button></div>
+		<div class="items"><button onclick="button(1)">Food1</button><button class="addtocart">Add To Cart</button></div>
+		<div class="items"><button onclick="button(2)">Food2</button><button class="addtocart">Add To Cart</button></div>
+		<div class="items"><button onclick="button(3)">Food3</button><button class="addtocart">Add To Cart</button></div>
+		<div class="items"><button onclick="button(4)">Food4</button><button class="addtocart">Add To Cart</button></div>
+		<div class="items"><button onclick="button(5)">Food5</button><button class="addtocart">Add To Cart</button></div>
+		<div class="items"><button onclick="button(6)">Food6</button><button class="addtocart">Add To Cart</button></div>
+	</div>
+	<div class="pop1" id="POP1"><p class="solditem1"></p></div>	
+		
+	
+		
+	<button onclick="showreceipt()" id="buttonreceipt1" class="h">receipt</button>
+
+	<div class="features" id="features">
+		<div class="aligns">
+			<input type="text" id="Foodname" placeholder="Enter Food Name: "><br>
+			
+			<input type="number" id="Useramount" placeholder="Enter useramount"><br>
+			<button onclick="addtocart()" class="button1">add</button><br>
+			<button onclick="resetcart()" class="button1">Reset</button>
+			<button onclick="calculate(0)" class="button1">Calculate</button>
+			<p id="output"></p>
+			<p id="output1">
+			<button onclick="buy()" class="button1">Buy</button>
+			<input disabled="" class="invisible" id="empty">
+		</div>
+	</div>
+	<div class="receipt" id="receipt"><p id="receipthere"></p>
+		</div>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	<script src="JavaScript.js"></script>
+
 </body>
 </html>

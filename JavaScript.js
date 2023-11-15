@@ -8,7 +8,11 @@ var Empty = document.getElementById("empty");
 var chatbox = document.getElementById("chatbox");
 var receipt = document.getElementById("receipt");
 var printreceipt = document.getElementById("receipthere");
-var buttonreceipt = document.getElementById("buttonreceipt1")
+var buttonreceipt = document.getElementById("buttonreceipt1");
+var pop = document.getElementById("POP");
+var pop1 = document.getElementById("POP1");
+var setting = document.getElementById("setting");
+var print2 = document.getElementById("solditem1");
 var foodlist = {
 'Food1': 100,
 'Food2': 200,
@@ -143,7 +147,7 @@ function buy() {
 		chatbox.style.display = "flex";
 		print.innerHTML = "thank you for purchasing! here your receipt.";
 		buttonreceipt.style.display = "flex";
-		printreceipt.innerHTML ="the change is: " change + " total item Purchased: " + numbersofitem;
+		printreceipt.innerHTML = "the change is: " + change + " total item Purchased: " + numbersofitem;
 		numbersofitem = 0;
 		useramount.value -= total;
 		print1.innerHTML = "";
@@ -169,9 +173,19 @@ function showfeatures() {
   	cc = 0;
   }
 }
-
+var switch1 = 0;
 function viewitems() {
-	print.innerHTML = solditem;
+	if(switch1 == 0) {
+		pop1.style.display = "flex";
+		print2.innerHTML = solditem;
+		switch1++;
+	} else if(switch1 == 1) {
+		pop1.style.display = "none";
+		print2.innerHTML = " ";
+		switch1--;
+	}
+
+
 }
 
 var c = 0;
@@ -184,4 +198,19 @@ function showreceipt() {
 		receipt.style.display = "none";
 		c--;
 	}
+}
+
+function showsetting() {
+	if(switch1 == 0) {
+		setting.style.display = "flex";
+		switch1++;
+	} else if(switch1 == 1) {
+		setting.style.display = "none";
+		switch1--;
+		
+	}
+}
+
+function ADDTOCART() {
+	pop.style.display = "flex";
 }
