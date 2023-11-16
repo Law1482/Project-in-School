@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<link rel="stylesheet" href="UI.css">
+<body>
+	<div class="mainpage">
+		<nav>
+			<div class="settingshow" id="setting">
+			<div onclick="viewcart()" class="viewcart">View Cart</div>
+			<div onclick="viewitems()"class="viewitems">View Items</div>
+		</div>
+			<button class="setting" onclick="showsetting()">Setting</button>	
+		</nav>
+
+		<div class="menu_first">
+		  	<div class="item food1" onclick="showpop(); button(1)"></div>
+		  	<div class="item food2" onclick="showpop(); button(2)"></div>
+		  	<div class="item food3" onclick="showpop(); button(3)"></div>
+		  	<div class="item food4" onclick="showpop(); button(4)"></div>
+
+		</div>
+				
+		<div class="menu">
+			<div class="item food5" onclick="showpop(); button(5)"></div>
+		  	<div class="item food6" onclick="showpop(); button(6)"></div>
+		  	<div class="item food7" onclick="showpop(); button(7)"></div>
+		  	<div class="item food8" onclick="showpop(); button(8)"></div>
+				
+		<div class="receipt" id="receipt"><p id="receipthere"></p></div>	
+		
+	<div class="POP1" id="POP1">
+		<div class="X" onclick="X(1)"></div>
+		<p id="itemsincart"></p>
+		<p id="output" class="print"></p>
+		<div class="calculate" onclick="test()">Calculate</div>
+		<div class="buy" onclick="buy()">Buy</div>
+		<input type="number" id="Useramount" placeholder="Enter useramount" class="userinput"><br>
+		<div id="additemshere" style="overflow: auto; height:400px;">eiuwfguioewioeugfwiueofygwoeiufgweifguefi</div>
+	</div>
+
+	<div class="POP" id="POP">
+		<div class="X" onclick="X(0)"></div>
+		<div class="outer">
+		<div class="decrease" onclick="increaseordecrease(0)">-</div>
+		<div><input type="number" id="Foodquantity" placeholder="Enter How many" class="quantity" value=""></div>
+		<div class="increase" onclick="increaseordecrease(1)">+</div>
+		</div>
+		<div class="addtocart" onclick="addtocart()"></div>
+	</div>
+		
+	<button onclick="showreceipt()" id="buttonreceipt1" class="h">receipt</button>
+
+	<div class="features" id="features">
+		<input type="text" id="Foodname" placeholder="Enter Food Name: "><br>
+		
+		<button onclick="resetcart()" class="button1">Reset</button>
+		<p id="output1"></p>
+		<button onclick="buy()" class="button1">Buy</button>
+		<input disabled="" class="invisible" id="empty">
+	</div>
+
+	<div class="POP2" id="POP2"><p id="printheresold"></div>
+
+
+
+	</div>
+	<script src="JavaScript.js"></script>
+</body>
+</html>
