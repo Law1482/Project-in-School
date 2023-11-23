@@ -1,0 +1,51 @@
+body {
+	background-color: orange;
+	font-family: sans-serif;
+}
+div.page {
+	margin-left: 200px;
+	margin-right: 200px;
+	
+}
+h3 {
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.input1{
+	position: relative;
+	left:80px;
+
+}
+.input2 {
+	left: 22px;
+	position: relative;
+}
+button.calculate {
+	position: relative;
+	left: 90px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+.inside {
+	margin: 10px;
+}
+div.pop {
+	background-color: blue;
+	border: 3px solid black;
+	position: fixed;
+	top:30%;
+	left: 38%;
+	border-radius: 15px 50px 40px 15px; 
+	margin: 10px;
+	color:whitesmoke;
+	box-shadow: 15px 20px darkorange;
+}
+.valid {
+	color: red;
+	position: relative;
+	left: 132px;
+	font-size: 15px;
+	margin-top: 0px;
+}
